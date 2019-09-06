@@ -18,15 +18,27 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="app" class="container">
         <div>
             Bienvenido {{ name }}
         </div>
 
         <footer class="footer">
+            <hr>
             <p>&copy; 2019 | Design.net</p>
         </footer>
     </div>
+
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                name: ''
+            }
+        });
+
+        vm.name = 'Santiago García';
+    </script>
 
 </body>
 </html>
